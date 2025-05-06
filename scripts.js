@@ -115,6 +115,33 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("form").addEventListener("submit", agregarComentario);
 });
   
+function mostrarProductos() {
+  const productos = [
+    { nombre: "Pan de ayer", descripcion: "Pan artesanal del día anterior, ideal para tostar.", precio: 800 },
+    { nombre: "Verduras imperfectas", descripcion: "Verduras frescas con formas únicas pero igual de sabrosas.", precio: 2000 },
+    { nombre: "Yogur próximo a vencer", descripcion: "Yogur natural con descuento por fecha próxima de caducidad.", precio: 990 }
+  ];
+
+  const lista = document.getElementById("listaProductos");
+
+  productos.forEach(producto => {
+    const div = document.createElement("div");
+    div.className = "col-md-4";
+
+    div.innerHTML = `
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">${producto.nombre}</h5>
+          <p class="card-text">${producto.descripcion}</p>
+          <p class="card-text"><strong>$${producto.precio.toLocaleString("es-CL")}</strong></p>
+        </div>
+      </div>
+    `;
+
+    lista.appendChild(div);
+  });
+}
+
 function cargarContenidoHome() {
     const usuarioActivo = JSON.parse(localStorage.getItem("usuarioActivo"));
 
@@ -139,6 +166,7 @@ function cargarContenidoHome() {
     if (consejoEl) {
       consejoEl.textContent = consejoAleatorio;
     }
+    mostrarProductos();
   }
   
   function cerrarSesion() {
