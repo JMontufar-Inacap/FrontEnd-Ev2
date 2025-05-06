@@ -1,0 +1,311 @@
+@media (max-width:991px) {
+    body.poster {
+        margin-top: 60vh;
+    }
+}
+
+body.poster {
+    background-attachment: fixed;
+}
+
+.top-5 {
+    top: 5px;
+}
+
+.poster {
+    z-index: 0;
+  }
+  
+  .poster:before {
+    background-image: url("imagenes/Background_1.jpg") !important;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    filter: blur(0px);
+  }
+  
+  body.poster:before {
+    position: fixed;
+  }
+  
+  @media (min-width: 1440px), (min-width: 992px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 992px) and (min-resolution: 192dpi) {
+    .poster:before {
+      background-image: url("imagenes/Background_1.jpg") !important;
+    }
+  }
+
+  .btn-ecofood {
+    background-color: #377D22;
+    border-color: #377D22;
+    color: white;
+}
+
+.btn-ecofood:hover {
+  background-color: #4cae4c;
+}
+
+.btn-ecofood:focus,
+.btn-ecofood:active {
+    background-color: #2f6a1d;
+    border-color: #2f6a1d;
+    color: white;
+}
+
+.text-ecofood {
+    color: #377D22 !important;
+}
+
+.testimonios-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.testimonio-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonio-card .mensaje {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.testimonio-card .persona {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.testimonio-card .persona img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.testimonio-card .nombre {
+  font-weight: bold;
+  color: #222;
+  margin: 0;
+}
+
+.testimonio-card .rol {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0;
+}
+
+.title-container {
+  margin-bottom: 30px;
+}
+
+.login-container {
+  background-color: #ffffffe1;
+  max-width: 400px;
+  margin: 5rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 2px solid #444;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.login-container button {
+  background-color: #2e5e2a;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.login-container a {
+  color: #0066ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-container p {
+  margin-top: 1rem;
+}
+
+.registro-container {
+  background-color: #ffffffe1;
+  max-width: 500px;
+  margin: 4rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.registro-container h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.registro-container label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.registro-container input {
+  width: 100%;
+  padding: 0.7rem;
+  border: 2px solid #444;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.nombre-apellido {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.nombre-apellido input {
+  flex: 1;
+}
+
+.registro-container button {
+  background-color: #2e5e2a;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
+
+.como-nos-conociste .opciones {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.como-nos-conociste label {
+  font-size: 0.9rem;
+}
+
+.como-nos-conociste input[type="checkbox"] {
+  transform: scale(0.9);
+  margin-right: 0.3rem;
+}
+
+.contenedor-recuperar {
+  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 400px;
+  margin: 7% auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+  text-align: center;
+}
+.contenedor-recuperar h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+.contenedor-recuperar input[type="email"] {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 1rem 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.contenedor-recuperar button {
+  background-color: #2e7d32;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.contenedor-recuperar button:hover {
+  background-color: #1b5e20;
+}
+
+.h-container {
+  max-width: 800px;
+  margin-top: 2rem;
+  margin: 3rem auto; 
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.h-bienvenida {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #004d00;
+}
+.h-contenido {
+  margin-top: 1rem;
+}
+.h-opciones {
+  margin-top: 2rem;
+}
+.h-opciones button {
+  margin-right: 1rem;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #377D22;
+  color: white;
+}
+
+.accordion-button.collapsed {
+  background-color: #e9f5e9;
+  color: #333;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(92, 184, 92, 0.5);
+  border-color: #5cb85c;
+  outline: none;
+}
+
+.accordion-button {
+  border-left: 4px solid #5cb85c;
+}
